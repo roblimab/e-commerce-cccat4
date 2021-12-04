@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+  "incremental": true,
+  "target": "es2021",
+  "module": "commonjs",
+  "outDir": "./dist",
+  "strict": true,
+  "esModuleInterop": true
+  },
+  "include": [
+      "./src"
+    , "test/Cpf.test.ts", "test/Order.test.ts"  ],
+  "exclude": [
+      "./node_modules"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "Small e-commerce project with an implementation aiming clean code and clean architecture",
+  "main": "index.js",
+  "author": "Robson",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "typescript": "^4.5.2"
+  },
+  "scripts": {
+    "tsc:init": "tsc --init",
+    "build": "tsc",
+    "test": "tsc && jest dist/"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "jest": "^27.3.1"
+  }
+}

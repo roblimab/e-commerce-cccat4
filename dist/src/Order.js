@@ -14,7 +14,9 @@ class Order {
         this.orderItems.push(new OrderItem_1.default(item.idItem, item.price, quantity));
     }
     addCoupon(coupon) {
-        this.coupon = coupon;
+        if (!coupon.isExpired()) {
+            this.coupon = coupon;
+        }
     }
     getTotal() {
         let total = 0;

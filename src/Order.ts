@@ -18,7 +18,9 @@ export default class Order {
   }
 
   addCoupon(coupon: Coupon){
-    this.coupon = coupon;
+    if(!coupon.isExpired()) {
+      this.coupon = coupon;
+    }    
   }
 
   getTotal(){
